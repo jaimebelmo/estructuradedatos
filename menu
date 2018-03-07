@@ -1,0 +1,52 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+
+using namespace std;
+
+
+
+int sumarDigitos(int a)
+  {int i,s=0;
+   while (a>0)
+   {  i=a%10;
+      s=s+i;
+      a=a/10;
+   }
+   return(s);
+  }
+int invertirNumero(int a)
+  {int i,s=0;
+   while(a>0)
+   {  i=a%10;
+      s=s*10+i;
+      a=a/10;
+   }
+   return(s);
+  }
+
+void main()
+  {int x,n,op;
+   cout<< "\n Introducir un numero natural: ";
+   cin>>x;
+   do
+   {   cout<<"\n\n\t\t***        MENU    ***    ";
+       cout<<"\n\t 1. Sumar Digitos";
+       cout<<"\n\t 2. Invertir Numero";
+       cout<<"\n\t 0. Salir";
+       cout<<"\n\t Elija una opcion: ";
+       cin>>op;
+       switch(op)
+       {   case 1:
+              n=sumarDigitos(x);
+              cout<<"\n\t La suma de los digitos es: "<<n;
+              break;
+           case 2:
+              n=invertirNumero(x);
+              cout<<"\n\t El numero inertido es: "<<n;
+	          break;
+       }
+   }while(op!=0);
+   getch();
+}
