@@ -1,0 +1,35 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+
+using namespace std;
+void main()
+
+{int d,N,i,I;
+       i=1;
+       I=0;
+     cout<<"ingrese el numero a operar : ";
+       cin>>N;
+while(i<=N)
+	{
+		d=N%10;
+		d=9-d;
+		I=I*10+d;
+		N=N/10;
+    }
+        N=I;
+        i=1;
+        I=0;
+while(i<=N)
+	{
+		d=N%10;
+		I=I*10+d;
+		N=N/10;
+    }
+
+      cout<<"El numero complemento a 9 de N es: "<<I;
+
+getch();
+
+}
