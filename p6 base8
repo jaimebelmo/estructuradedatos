@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <conio.h>
+#include <iostream>
+using namespace std;
+ void main()
+ {int n, a;
+	cout<< "\t introduzca un numero entero: ";
+	cin>>n;
+	while(n>0)
+	{a=n%10;
+	 if (a>=8)
+	 {cout<< "\n No pertenece " <<a;
+	 }
+	 n=n/10;
+	}	
+	getch();
+ }
