@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <conio.h>
+#include <iostream>
+using namespace std;
+ void main()
+ {int n, z=0, a,k;
+	cout<< "\t introduzca un numero entero: ";
+	cin>>n;
+	k=n;
+	while(k>0)
+	{ a=k%10;
+	  z=z*10+a;
+	  k=k/10;
+	}
+	if (z==n)
+	{cout<<"\n\t El numero es capicua";
+	}else
+	{cout<<"\n\t  El numero no es capicua ";
+	}
+	getch();
+ }
