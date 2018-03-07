@@ -1,0 +1,130 @@
+#include "stdafx.h"
+#include <conio.h>
+#include <iostream>
+
+using namespace std;
+
+ void main()
+ { int n, s=0, a;
+	 cout<< "\t introduzca un numero entero: ";
+	 cin>>n;
+	 while(n>0)
+	{ a=n%10;
+	  s=s+a;
+	  n=n/10;
+	}
+	cout<<"\n\t la suma de los digitos es : "<<s;
+	getch();
+ }
+
+#include "stdafx.h"
+#include <conio.h>
+#include <iostream>
+using namespace std;
+ void main()
+ { int n, z=0, a;
+	 cout<< "\t introduzca un numero entero: ";
+	 cin>>n;
+	 while(n>0)
+	{ a=n%10;
+	  z=z*10+a;
+	  n=n/10;
+	}
+	cout<<"\n\t El numero imvertido es: "<<z;
+	getch();
+ }
+
+#include "stdafx.h"
+#include <conio.h>
+#include <iostream>
+using namespace std;
+ void main()
+ { int n, z=0, a, b=0;
+	cout<< "\t introduzca un numero entero: ";
+	cin>>n;
+	while(n>0)
+	{ a=n%10;
+	  if (a%2==0)
+	{ b=b+1;
+	 }
+	  n=n/10;
+	}
+	cout<<"\n\t La cantidad de digitos pares es: "<<b;
+	getch();
+ }
+
+#include "stdafx.h"
+#include <conio.h>
+#include <iostream>
+using namespace std;
+ void main()
+ {int n, z=0, a,k;
+	cout<< "\t introduzca un numero entero: ";
+	cin>>n;
+	k=n;
+	while(k>0)
+	{ a=k%10;
+	  z=z*10+a;
+	  k=k/10;
+	}
+	if (z==n)
+	{cout<<"\n\t El numero es capicua";
+	}else
+	{cout<<"\n\t  El numero no es capicua ";
+	}
+	getch();
+ }
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+
+using namespace std;
+void main()
+
+{int d,N,i,I;
+       i=1;
+       I=0;
+     cout<<"ingrese el numero a operar : ";
+       cin>>N;
+while(i<=N)
+	{
+		d=N%10;
+		d=9-d;
+		I=I*10+d;
+		N=N/10;
+    }
+        N=I;
+        i=1;
+        I=0;
+while(i<=N)
+	{
+		d=N%10;
+		I=I*10+d;
+		N=N/10;
+    }
+
+      cout<<"El numero complemento a 9 de N es: "<<I;
+
+getch();
+
+}
+
+#include "stdafx.h"
+#include <conio.h>
+#include <iostream>
+using namespace std;
+ void main()
+ {int n, a;
+	cout<< "\t introduzca un numero entero: ";
+	cin>>n;
+	while(n>0)
+	{a=n%10;
+	 if (a>=8)
+	 {cout<< "\n No pertenece " <<a;
+	 }
+	 n=n/10;
+	}	
+	getch();
+ }
